@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "../src/App.css";
+import "./App.css";
+import starwars from './img/starwars.mp4'
 
 function App() {
   const [dados, setDados] = useState(null);
@@ -26,6 +27,11 @@ function App() {
   
   return (
     <div className="container">
+    <div className="video" >
+    <video width="100" height="50" autoPlay muted>
+      <source src={starwars}/>
+    </video>
+    </div>
       <h1>Titulo</h1>
 
 <div className="info">
